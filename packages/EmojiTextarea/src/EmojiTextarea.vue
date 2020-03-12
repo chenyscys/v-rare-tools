@@ -196,6 +196,7 @@ export default {
   border:1px solid #ddd;
   border-radius: 5px;
   font-size: 14px;
+  background: #fff;
   .expression{
     max-width: 465px;
     position: absolute;
