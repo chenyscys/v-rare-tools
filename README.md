@@ -1,5 +1,7 @@
 # v-rare-tools
 
+English | [简体中文](https://github.com/chenyscys/v-rare-tools/blob/master/README-zh.md)
+
 ## install
 ```
 npm install v-rare-tools
