@@ -180,7 +180,10 @@ export default {
     updateText() {
       const newText = this.$refs.initBox.innerHTML.replace(/<img(.*?)>/gi, (str) => {
         const html = str.match(/<img .*? data-name=["](.*?)["] .*?>/); // 写个正则匹配data-name
-        return html[1];
+        if (html && html.length > 1) {
+          return html[1];
+        }
+        return '';
       });
       this.$emit('input', newText);
     },
