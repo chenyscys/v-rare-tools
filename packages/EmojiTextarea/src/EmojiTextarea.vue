@@ -7,6 +7,7 @@
         contenteditable="true"
         class="qq_face emoji_face initBox" :style="{ height: textHeight + 'px'}">
       </div>
+      <div id="cacheText" v-show="false"></div>
       <div class="text-foot">
         <span class="faceBtn" @click="showExpression"></span>
         <p>还可输入{{txtSize}}字,按Enter键换行</p>
@@ -185,7 +186,10 @@ export default {
         }
         return '';
       });
-      this.$emit('input', newText);
+      const cacheText = document.getElementById('cacheText');
+      cacheText.innerHTML = newText;
+      console.log(cacheText.innerText);
+      this.$emit('input', cacheText.innerText);
     },
   },
 };
