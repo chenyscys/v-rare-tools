@@ -2,6 +2,10 @@
 
 English | [简体中文](https://github.com/chenyscys/v-rare-tools/blob/master/README-zh.md)
 
+## version：1.0.2
+
+fixed the bug which innerHTML auto translate the Escape Sequence
+
 ## install
 ```
 npm install v-rare-tools

@@ -4,6 +4,10 @@
 > 1、qq，emoji表情的EmojiTextarea输入框插件
 > 2、将表情代码转化为表情的EmojiWord插件
 
+## 版本：1.0.2
+
+修复因innerHTML带来的自动转义字符串bug
+
 ## 安装
 ```
 npm install v-rare-tools
