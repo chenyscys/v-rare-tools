@@ -188,7 +188,6 @@ export default {
       });
       const cacheText = document.getElementById('cacheText');
       cacheText.innerHTML = newText;
-      console.log(cacheText.innerText);
       this.$emit('input', cacheText.innerText);
     },
   },
