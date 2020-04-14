@@ -103,7 +103,7 @@ export default {
       this.$refs.initBox.focus();
     },
     hideExpression(e) {
-      if (e.target.id !== 'f47e6662-7978-40d8-b1a1-f9e0bdc9b04f' && e.target.className !== 'faceBtn' && e.target.className.indexOf('faceEmoji') === -1) {
+      if (e.target.id !== 'f47e6662-7978-40d8-b1a1-f9e0bdc9b04f' && e.target.parentNode.id !== 'f47e6662-7978-40d8-b1a1-f9e0bdc9b04f' && e.target.className !== 'faceBtn' && e.target.className.indexOf('faceEmoji') === -1) {
         this.isShowExpression = false;
         document.getElementById('f47e6662-7978-40d8-b1a1-f9e0bdc9b04f').removeEventListener('focusout', this.blurFocus);
         document.getElementById('f47e6662-7978-40d8-b1a1-f9e0bdc9b04f').blur();
@@ -216,7 +216,8 @@ export default {
     padding: 10px;
     text-align: left;
     width: auto;
-    line-height: 20px;
+    line-height: 30px;
+    overflow: auto;
   }
   .text-foot{
     display: flex;
@@ -235,6 +236,10 @@ export default {
       background: url(../../assets/img/icon-reply.png) -162px 0 no-repeat;
       cursor: pointer;
     }
+  }
+  #cacheText{
+    height: 1px;
+    overflow: hidden;
   }
 }
 </style>

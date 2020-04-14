@@ -1133,7 +1133,7 @@
     margin-right: -1px;
 }
 
-.qq_face span {
+.qq_face span.faceEmoji {
     float: left;
     width: 28px;
     height: 28px;
@@ -1141,7 +1141,9 @@
     text-indent: -999em;
     border: 1px solid #f0f0f0;
     cursor: pointer;
-    background: url("../img/qqface-1.png") no-repeat;
+    background-image: url("../img/qqface-2.png");
+    background-repeat: no-repeat;
+    background-size: 434px 202px;
     margin-bottom: -1px;
     margin-right: -1px;
 }
@@ -1149,18 +1151,20 @@
 .facebox{
     width: 28px;
     height: 28px;
-    background: url("../img/qqface-1.png") no-repeat;
-    transform: scale(0.714);
-    margin: -4px;
+    background: url("../img/qqface-2.png") no-repeat;
+    background-size: 434px 202px;
+    /* transform: scale(0.714); */
+    margin: -4px 0;
     vertical-align: top;
 }
 
 .emojibox{
     width: 28px;
     height: 28px;
-    background: url("../img/emoji-1.png") no-repeat;
-    transform: scale(0.714);
-    margin: -4px;
+    background: url("../img/emoji-2.png") no-repeat;
+    background-size: 480px 384px;
+    /* transform: scale(0.714); */
+    margin: -4px 0;
     vertical-align: top;
 }
 
@@ -1186,7 +1190,7 @@
     margin-right: -1px;
 }
 
-.emoji_face span {
+.emoji_face span.faceEmoji {
     float: left;
     width: 28px;
     height: 28px;
@@ -1194,7 +1198,9 @@
     text-indent: -999em;
     border: 1px solid #f0f0f0;
     cursor: pointer;
-    background: url("../img/emoji-1.png") no-repeat;
+    background-image: url("../img/emoji-2.png");
+    background-repeat: no-repeat;
+    background-size: 480px 384px;
     margin-bottom: -1px;
     margin-right: -1px;
 }
@@ -1205,7 +1211,7 @@
     height: auto;
     margin-right: -1px;
 }
-.emoji_weixin span {
+.emoji_weixin span.faceEmoji {
     float: left;
     width: 28px;
     height: 28px;
