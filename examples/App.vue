@@ -14,9 +14,8 @@ export default {
       textParams: {
         maxsize: 1000,
         textHeight: 200,
-        initData: 'adas[玫瑰]',
       },
-      textVal: '',
+      textVal: 'adas[玫瑰]',
     };
   },
 };

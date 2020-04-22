@@ -56,7 +56,7 @@ export default {
       type: Number,
       default: 180,
     },
-    initData: {
+    value: {
       type: String,
       default: '',
     },
@@ -86,7 +86,7 @@ export default {
     },
   },
   mounted() {
-    this.$refs.initBox.innerHTML = replaceImg(this.initData, faceimg);
+    this.$refs.initBox.innerHTML = replaceImg(this.value, faceimg);
     this.txtSize = this.maxsize;
     document.body.addEventListener('click', this.hideExpression, true);
   },

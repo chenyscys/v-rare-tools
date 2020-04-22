@@ -1153,8 +1153,7 @@
     height: 28px;
     background: url("../img/qqface-2.png") no-repeat;
     background-size: 434px 202px;
-    /* transform: scale(0.714); */
-    margin: -4px 0;
+    transform: scale(0.714);
     vertical-align: top;
 }
 
@@ -1163,8 +1162,7 @@
     height: 28px;
     background: url("../img/emoji-2.png") no-repeat;
     background-size: 480px 384px;
-    /* transform: scale(0.714); */
-    margin: -4px 0;
+    transform: scale(0.714);
     vertical-align: top;
 }
 
